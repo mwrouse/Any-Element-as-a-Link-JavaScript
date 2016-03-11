@@ -1,0 +1,71 @@
+/**
+ * ====================================
+ *     Any Element As a Link
+ * ===================================
+ *
+ * Author.......: Michael Rouse
+ * Language.....: JavaScript
+ * Date.........: March 2016
+ *
+ * Description..: This JavaScript library allows you to use an HTML DOM Element as a link, not just anchor tags. For those times where putting an anchor tag around something might be
+ *                annoying, or impossible, for some reason...
+ */
+
+
+/**
+ * Function.....: Register Links
+ * Author.......: Michael Rouse
+ * Description..: Registers all the non-anchor tag links on the page
+ */
+function AnyElementAsALink_RegisterLinks()
+{
+  // Find all the elements with an href tag that are not <link> or <a> tags
+  var elements = document.querySelectorAll('[href]:not(a):not(link)');
+
+  // Loop through each element found
+  for (var i = 0; i < elements.length; i++)
+  {
+    // Register the click event
+    (elements[i]).addEventListener('click', function(){
+      AnyElementAsALink_FollowLink(this);
+    });
+
+    // Add a title attribute to substitute the anchor tag showing in the bottom left of a window
+    if ((elements[i]).getAttribute('title') === null)
+    {
+      (elements[i]).setAttribute('title', (elements[i]).getAttribute('href'));
+    }
+  }
+}
+
+
+/**
+ * Function.....: AnyElementAsALink_FollowLink
+ * Author.......: Michael Rouse
+ * Parameters...: link_element - the element that was clicked
+ * Description..: This function is called when an element with a href attribute that is not a <a> or a <link> tag is clicked
+ */
+function AnyElementAsALink_FollowLink(link_element)
+{
+  // Pull all the attributes from the element
+  var url = link_element.getAttribute('href');
+  var target = link_element.getAttribute('target') || '_self';
+
+  // Not a valid link, do not follow it
+  if (url === null || url == '')
+  {
+    return;
+  }
+
+  // Follow the link
+  window.open(url, target);
+}
+
+
+
+/*
+ * Register links when the page loads
+ */
+window.addEventListener('load', function(){
+  AnyElementAsALink_RegisterLinks();
+});
