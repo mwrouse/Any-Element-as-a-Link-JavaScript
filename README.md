@@ -2,6 +2,8 @@
 This little JavaScript library allows you to have any element on a page act as a link, even if it is not an anchor tag.
 
 #### Examples
+[View a CodePen Example](http://codepen.io/mwrouse/pen/aNZxJJ/)
+
 New Syntax:
 ```html
 <div href="http://example.com">This is a div that is also a link</div>
