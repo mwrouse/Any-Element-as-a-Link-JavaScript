@@ -31,7 +31,7 @@ function DOMElementLinks_RegisterLinks()
     });
 
     // Add a title attribute to substitute the anchor tag showing in the bottom left of a window
-    if ((elements[i]).getAttribute('title') === null)
+    if (!(elements[i]).getAttribute('title'))
     {
       (elements[i]).setAttribute('title', (elements[i]).getAttribute('href'));
     }
@@ -52,7 +52,7 @@ function DOMElementLinks_FollowLink(link_element)
   var target = link_element.getAttribute('target') || '_self';
 
   // Not a valid link, do not follow it
-  if (url === null || url == '')
+  if (!url)
   {
     return;
   }
