@@ -49,14 +49,11 @@ function DOMElementLinks_FollowLink(link_element)
   var url = link_element.getAttribute('href');
   var target = link_element.getAttribute('target') || '_self';
 
-  // Not a valid link, do not follow it
-  if (!url)
+  // Only follow the link if there is a URL entered
+  if (url)
   {
-    return;
+    window.open(url, target);
   }
-
-  // Follow the link
-  window.open(url, target);
 }
 
 
