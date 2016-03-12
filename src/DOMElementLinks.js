@@ -49,7 +49,7 @@
     /**
      * Function.....: Follow Link
      * Author.......: Michael Rouse
-     * Parameters...: link_element - the element that was clicked
+     * Parameters...: element - the element that was clicked
      * Description..: This function is called when an element with a href attribute that is not a <a> or a <link> tag is clicked
      */
     this.follow = function(element){
