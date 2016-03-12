@@ -11,7 +11,15 @@
  *                annoying, or impossible, for some reason...
  */
 (function(){
+  "use strict";
+
   var DOMElementsAsLinks = function(){
+    // Do not break the window scope
+    if (this === window)
+    {
+      return new DOMElementsAsLinks();
+    }
+
     /**
      * Function.....: Register Links (Immediate Function)
      * Author.......: Michael Rouse
@@ -35,6 +43,8 @@
         // Set the title attribute
         (elements[i]).setAttribute('title', (elements[i]).getAttribute('href'));
       }
+
+      return this;
     };
 
 
@@ -51,10 +61,11 @@
       {
         window.open(url, (element.getAttribute('target') || '_self'));
       }
+
+      return this;
     };
 
-
-    // Constructor, register all the links
+    // Constructor, register the links
     this.register();
 
     return this;
