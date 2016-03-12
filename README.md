@@ -6,6 +6,7 @@ The syntax for using any DOM Element as a link is extremely simple, all you do i
 ```html
 <span href="http://example.com">This is a link!</span>
 <span href="http://example.com" target="_blank">This is a link that opens in a new tab!</span>
+<img src="http://example.com/user/profile/avatar.png" href="http://example.com/user/profile">
 ```
 
 ## Styling
