@@ -1,6 +1,6 @@
 /**
  * ====================================
- *     Any Element As a Link
+ *     DOMElementLinks
  * ===================================
  *
  * Author.......: Michael Rouse
@@ -17,7 +17,7 @@
  * Author.......: Michael Rouse
  * Description..: Registers all the non-anchor tag links on the page
  */
-function AnyElementAsALink_RegisterLinks()
+function DOMElementLinks_RegisterLinks()
 {
   // Find all the elements with an href tag that are not <link> or <a> tags
   var elements = document.querySelectorAll('[href]:not(a):not(link)');
@@ -27,7 +27,7 @@ function AnyElementAsALink_RegisterLinks()
   {
     // Register the click event
     (elements[i]).addEventListener('click', function(){
-      AnyElementAsALink_FollowLink(this);
+      DOMElementLinks_FollowLink(this);
     });
 
     // Add a title attribute to substitute the anchor tag showing in the bottom left of a window
@@ -40,12 +40,12 @@ function AnyElementAsALink_RegisterLinks()
 
 
 /**
- * Function.....: AnyElementAsALink_FollowLink
+ * Function.....: DOMElementLinks_FollowLink
  * Author.......: Michael Rouse
  * Parameters...: link_element - the element that was clicked
  * Description..: This function is called when an element with a href attribute that is not a <a> or a <link> tag is clicked
  */
-function AnyElementAsALink_FollowLink(link_element)
+function DOMElementLinks_FollowLink(link_element)
 {
   // Pull all the attributes from the element
   var url = link_element.getAttribute('href');
@@ -67,5 +67,5 @@ function AnyElementAsALink_FollowLink(link_element)
  * Register links when the page loads
  */
 window.addEventListener('load', function(){
-  AnyElementAsALink_RegisterLinks();
+  DOMElementLinks_RegisterLinks();
 });
