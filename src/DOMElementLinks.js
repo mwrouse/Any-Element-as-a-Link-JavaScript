@@ -11,8 +11,6 @@
  *                annoying, or impossible, for some reason...
  */
 (function(){
-  "use strict";
-
   var DOMElementsAsLinks = function(){
     // Do not break the window scope
     if (this === window)
