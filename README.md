@@ -8,7 +8,21 @@ The syntax for using any DOM Element as a link is extremely simple, all you do i
 <span href="http://example.com" target="_blank">This is a link that opens in a new tab!</span>
 ```
 
-
+## Styling
+If you're interested in styling your non-anchor tag links the same way as your anchor tag links, this is also simple, add CSS similar to the following:
+```css
+a,
+[href]
+{
+  /* CSS Styling Here */
+}
+a:hover,
+[href]:hover
+{
+  /* Styling for Hover */
+}
+```
+Yes, this is a bit reduntent, seeing as all you need is the [href] selector, but oh well.
 
 ## Example
 [View a CodePen Example](http://codepen.io/mwrouse/pen/aNZxJJ/)
