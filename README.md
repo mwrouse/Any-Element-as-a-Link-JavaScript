@@ -15,5 +15,5 @@ The syntax for using any DOM Element as a link is extremely simple, all you do i
 
 
 ## License 
-Distributed under the MIT license.
+Distributed under the [MIT license](https://raw.githubusercontent.com/mwrouse/dom-elements-as-links-javascript/master/LICENSE).
 
