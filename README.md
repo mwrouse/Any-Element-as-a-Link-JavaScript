@@ -25,9 +25,9 @@ a:hover,
 Yes, this is a bit redundant, seeing as all you need is the [href] selector, but oh well.
 
 ## Usage
-To use this library, simply include the source code in your program, or copy and paste it into an existing JavaScript file you have, then run the function
+To use this library, simply include the source code in your program, or copy and paste it into an existing JavaScript file you have, then run
 ```javascript
-window.DOMElementsAsLinks();
+window.DOMElementsAsLinks()
 ```
 when the page is done loading. It is important that it is ran when the page has finished loading, because all DOM elements need to be ready for it to read them.
 
@@ -48,6 +48,8 @@ You should know how to do that though.
 ## Example
 [View a CodePen Example](http://codepen.io/mwrouse/pen/aNZxJJ/)
 
+## Known Issues 
+The only known issue is that this won't work on browsers that have JavaScript disabled...
 
 ## License
 Distributed under the [MIT license](https://raw.githubusercontent.com/mwrouse/dom-elements-as-links-javascript/master/LICENSE).
