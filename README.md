@@ -1,4 +1,4 @@
-# Any Element as a Link
+# DOM Element Links
 This little JavaScript snippet allows you to have any element on a page act as a link, even if it is not an anchor tag.
 
 #### Examples
