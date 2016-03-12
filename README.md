@@ -24,6 +24,7 @@ a:hover,
 }
 ```
 Yes, this is a bit redundant, seeing as all you need is the [href] selector, but oh well.
+
 Please, however, at least have this CSS somewhere:
 ```css
 [href]:not(a)
