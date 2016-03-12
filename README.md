@@ -13,3 +13,7 @@ The syntax for using any DOM Element as a link is extremely simple, all you do i
 ## Example
 [View a CodePen Example](http://codepen.io/mwrouse/pen/aNZxJJ/)
 
+
+## License 
+Distributed under the MIT license.
+
