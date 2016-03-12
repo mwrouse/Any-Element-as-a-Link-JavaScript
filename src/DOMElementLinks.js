@@ -19,7 +19,7 @@
     }
 
     /**
-     * Function.....: Register Links (Immediate Function)
+     * Function.....: Register Links
      * Author.......: Michael Rouse
      * Description..: Registers all the non-anchor tag links on the page
      */
