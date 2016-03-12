@@ -1,5 +1,5 @@
 # Any Element as a Link
-This little JavaScript library allows you to have any element on a page act as a link, even if it is not an anchor tag.
+This little JavaScript snippet allows you to have any element on a page act as a link, even if it is not an anchor tag.
 
 #### Examples
 [View a CodePen Example](http://codepen.io/mwrouse/pen/aNZxJJ/)
