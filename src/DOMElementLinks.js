@@ -30,11 +30,9 @@ function DOMElementLinks_RegisterLinks()
       DOMElementLinks_FollowLink(this);
     });
 
-    // Add a title attribute to substitute the anchor tag showing in the bottom left of a window
-    if (!(elements[i]).getAttribute('title'))
-    {
-      (elements[i]).setAttribute('title', (elements[i]).getAttribute('href'));
-    }
+    // Add a title attribute to substitute the URL showing in the bottom left of a window
+    (elements[i]).setAttribute('title', (elements[i]).getAttribute('href'));
+
   }
 }
 
