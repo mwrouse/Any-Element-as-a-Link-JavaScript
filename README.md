@@ -22,7 +22,7 @@ a:hover,
   /* Styling for Hover */
 }
 ```
-Yes, this is a bit reduntent, seeing as all you need is the [href] selector, but oh well.
+Yes, this is a bit redundant, seeing as all you need is the [href] selector, but oh well.
 
 ## Example
 [View a CodePen Example](http://codepen.io/mwrouse/pen/aNZxJJ/)
