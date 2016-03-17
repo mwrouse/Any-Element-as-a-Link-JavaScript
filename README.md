@@ -54,7 +54,7 @@ window.addEventListener('load', function(){
 You should know how to do that though.
 
 ## Example
-[View a CodePen Example](http://codepen.io/mwrouse/pen/aNZxJJ/)
+[View a CodePen Example](http://codepen.io/mwrouse/full/aNZxJJ/)
 
 ## Known Issues 
 The only known issue is that this won't work on browsers that have JavaScript disabled...
